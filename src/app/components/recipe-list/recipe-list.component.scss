@@ -1,0 +1,28 @@
+@import 'breakpoints';
+
+.recipe-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+@include smartphone {
+    app-recipe-item {
+        width: 100%;
+    }
+}
+
+@include tablet  {
+    .recipe-list {
+        gap: 4%;
+    }
+    app-recipe-item {
+        width: 48%;
+    }
+}
+
+@include desktop {
+    app-recipe-item {
+        width: 30%;
+    }
+}

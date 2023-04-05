@@ -1,0 +1,12 @@
+@import 'utils';
+
+.recipe-picker {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.recipe-picker button {
+    display: block;
+    margin: 0 auto;
+}

@@ -1,0 +1,15 @@
+@import 'utils';
+
+.card {
+    @include border;
+    margin: 1rem 0;
+    padding: 1rem;
+    height: 260px;
+}
+
+.empty {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+}

@@ -1,0 +1,9 @@
+@mixin container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+@mixin border {
+    border: 1px solid #e5e7eb;
+    border-radius: .5rem;
+}

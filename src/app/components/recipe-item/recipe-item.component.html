@@ -1,0 +1,12 @@
+<div *ngIf="recipe" class="card">
+    <h2>{{ recipe.name }}</h2>
+    <span>{{ recipe.category }}</span>
+    <hr>
+    <ng-container *ngFor="let ingredient of recipe.ingredients">
+        <p>{{ ingredient.designation | titlecase }}</p>
+    </ng-container>
+</div>
+<div *ngIf="!recipe" class="empty">
+    <img src="https://placehold.co/160x240" alt="Empty placeholder">
+    <p>Please select a recipe</p>
+</div>          

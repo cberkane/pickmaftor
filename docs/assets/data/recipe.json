@@ -1,0 +1,64 @@
+[
+    {
+        "uid": 0,
+        "name": "Nouilles Teriaki",
+        "ingredients": [
+            { "designation": "Nouilles chinoises" },
+            { "designation": "sauce Teriaki" }
+        ]
+    },
+    {
+        "uid": 1,
+        "name": "Nid printanier",
+        "ingredients": [
+            { "designation": "haricots verts Cassegrain" },
+            { "designation": "oeufs mollets" },
+            { "designation": "radis crus" }
+        ]
+    },
+    {
+        "uid": 2,
+        "name": "Semi-couscous",
+        "ingredients": [
+            { "designation": "couscous Tipiak" },
+            { "designation": "pois chiches Cassegrain" },
+            { "designation": "poivron jaune détaillés" },
+            { "designation": "tomates cerises" }
+        ]
+    },
+    {
+        "uid": 3,
+        "name": "It's a fight",
+        "ingredients": [
+            { "designation": "poivron vert détaillé" },
+            { "designation": "haricots blancs cuisinés" },
+            { "designation": "avocat" }
+        ]
+    },
+    {
+        "uid": 4,
+        "name": "Death rice",
+        "ingredients": [
+            { "designation": "riz blanc" },
+            { "designation": "lentilles cuites" }
+        ]
+    },
+    {
+        "uid": 5,
+        "name": "Patalo",
+        "ingredients": [
+            { "designation": "tortelini" },
+            { "designation": "tomates en dé" },
+            { "designation": "concombre noa en dé" },
+            { "designation": "maïs" }
+        ]
+    },
+    {
+        "uid": 6,
+        "name": "Choukchouka",
+        "ingredients": [
+            { "designation": "Ratatouille Cassepois" },
+            { "designation": "tomates en dé" }
+        ]
+    }
+]
