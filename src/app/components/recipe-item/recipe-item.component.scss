@@ -1,10 +1,18 @@
 @import 'utils';
+@import 'variables';
 
 .card {
     @include border;
     margin: 1rem 0;
     padding: 1rem;
     height: 260px;
+}
+
+.card .chip {
+    background: $accent;
+    padding: 4px 12px;
+    color: aliceblue;
+    border-radius: 1rem;
 }
 
 .empty {

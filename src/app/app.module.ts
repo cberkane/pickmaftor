@@ -3,6 +3,7 @@ import { HttpClientModule } from '@angular/common/http'
 import { NgModule } from '@angular/core';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import {OverlayModule} from '@angular/cdk/overlay'; 
+import {MatRippleModule} from '@angular/material/core';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -18,17 +19,19 @@ import { RecipeItemComponent } from './components/recipe-item/recipe-item.compon
 @NgModule({
   declarations: [
     AppComponent,
-    RecipePickerComponent,
-    RecipeListComponent,
-    SidenavComponent,
     NavComponent,
-    RecipeItemComponent
+    RecipeItemComponent,
+    RecipeListComponent,
+    RecipePickerComponent,
+    SidenavComponent,
   ],
   imports: [
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    MatRippleModule,
     OverlayModule,
+    
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
       registrationStrategy: 'registerWhenStable:30000'
