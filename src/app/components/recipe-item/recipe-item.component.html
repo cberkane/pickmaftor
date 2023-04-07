@@ -1,6 +1,8 @@
 <div *ngIf="recipe" class="card">
-    <h2>{{ recipe.name }}</h2>
-    <span class="chip">{{ recipe.category }}</span>
+    <header>
+        <h2>{{ recipe.name }}</h2>
+        <span class="chip">{{ recipe.category }}</span>
+    </header>
     <hr>
     <ng-container *ngFor="let ingredient of recipe.ingredients">
         <p>{{ ingredient.designation | titlecase }}</p>

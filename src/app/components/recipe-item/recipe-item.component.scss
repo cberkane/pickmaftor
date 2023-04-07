@@ -8,11 +8,20 @@
     height: 260px;
 }
 
+.card header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .card .chip {
     background: $accent;
     padding: 4px 12px;
+    font-size: 12px;
     color: aliceblue;
     border-radius: 1rem;
+    justify-self: flex-start;
 }
 
 .empty {
