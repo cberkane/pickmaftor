@@ -3,30 +3,29 @@
 
 .card {
     @include border;
-    margin: 1rem 0;
-    padding: 1rem;
     height: 260px;
+    padding: 1rem;
+    margin: 1rem 0;
 }
 
 .card header {
     position: relative;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
 .card .chip {
-    background: $accent;
     padding: 4px 12px;
-    font-size: 12px;
-    color: aliceblue;
+    background: $accent;
     border-radius: 1rem;
-    justify-self: flex-start;
+    font-size: 12px;
+    color: $white;
 }
 
 .empty {
     display: flex;
     flex-direction: column;
-    gap: 14px;
     align-items: center;
+    gap: 14px;
 }

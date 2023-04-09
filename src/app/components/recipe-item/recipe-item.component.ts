@@ -1,6 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Recipe } from 'src/app/models/recipe.model';
 
+type C = 0xFF
+
 @Component({
   selector: 'app-recipe-item',
   templateUrl: './recipe-item.component.html',
@@ -13,6 +15,17 @@ export class RecipeItemComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  getCategoryColor(category: string): string {
+    switch (category) {
+      case 'principal':
+        return '';
+      case 'salade':
+        return '';
+      default:
+        return '';
+    }
   }
 
 }
