@@ -1,4 +1,9 @@
-<div @fade class="menu">
-    <button (click)="close()">Close</button>
-    <p>I am sidenav</p>
+<div class="menu">
+    <header>
+        <h2>Menu title</h2>
+        <icon [icon]="crossIcon" (click)="close()"></icon>
+    </header>
+    <div>
+        <p>I am sidenav bro</p>
+    </div>
 </div>

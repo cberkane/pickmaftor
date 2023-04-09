@@ -1,7 +1,6 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
-import { Recipe } from './models/recipe.model';
+import { Title } from '@angular/platform-browser';
+import { ActivatedRoute, NavigationEnd, Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -9,18 +8,21 @@ import { Recipe } from './models/recipe.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  private path = './assets/data/recipe.json';
-  public recipes$: Observable<Recipe[]>;
+  private title = 'PMF';
 
   constructor(
-    private http: HttpClient,
+    private router: Router,
+    private route: ActivatedRoute,
+    private titleService: Title,
   ) { }
 
   ngOnInit(): void {
-    this.recipes$ = this.getRecipes();
-  }
-
-  getRecipes(): Observable<any[]> {
-    return this.http.get<[]>(this.path);
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        const subtitle = this.route.firstChild.routeConfig.data['title'];
+        const title = subtitle ? `${this.title} - ${subtitle}` : this.title;
+        this.titleService.setTitle(title);
+      }
+    });
   }
 }

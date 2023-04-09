@@ -1,0 +1,6 @@
+<div class="home-buttons">
+    <button [routerLink]="['/ingredients']" [queryParams]="{type: IngredientType.BASE}">base</button>
+    <button [routerLink]="['/ingredients']" [queryParams]="{type: IngredientType.VEGGIE_BASE}">base végé</button>
+    <button [routerLink]="['/ingredients']" [queryParams]="{type: IngredientType.SIDE}">accompagnement</button>
+    <button [routerLink]="['/ingredients']" [queryParams]="{type: IngredientType.PROTEIN}">proteines</button>
+</div>

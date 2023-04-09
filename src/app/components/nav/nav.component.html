@@ -1,7 +1,13 @@
 <nav>
-    <button (click)="openMenu()">icon</button>
+    <div class="brand">
+    </div>
+    <div class="menu">
+    </div>
+    <div class="aside">
+        <icon [icon]="icons.MENU" (click)="openMenu()"></icon>
+    </div>
 </nav>
 
 <ng-template #sidenav>
-    <app-sidenav [overlayRef]="overlayRef"></app-sidenav>
-</ng-template>    
+    <app-sidenav @fade [overlayRef]="overlayRef"></app-sidenav>
+</ng-template>

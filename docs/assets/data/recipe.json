@@ -78,5 +78,27 @@
             { "designation": "Herbes fines" },
             { "designation": "Huile d'olive" }
         ]
+    },
+    {
+        "uid": 8,
+        "name": "Tacarote",
+        "category": "principal",
+        "ingredients": [
+            { "designation": "Galettes faritas" },
+            { "designation": "Carottes rappées" },
+            { "designation": "Choux rouges" },
+            { "designation": "Feuilles vertes" },
+            { "designation": "Avocat ou feta" }
+        ]
+    }, 
+    {
+        "uid": 8,
+        "name": "Nid printanier bis",
+        "category": "salade",
+        "ingredients": [
+            { "designation": "haricots verts cuits" },
+            { "designation": "Avocat en dès" },
+            { "designation": "Olives vertes" }
+        ] 
     }
 ]

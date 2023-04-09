@@ -2,13 +2,24 @@
 @import '@angular/cdk/overlay-prebuilt.css';
 @import 'variables';
 
+
+/* GENERAL */
 * {
-    box-sizing: border-box;
-    font-family: $font-family;
     padding: 0;
+    margin: 0;
+    font-family: $font-family;
+}
+
+html, body { 
+    height: 100%; 
+}
+
+body { 
     margin: 0;
 }
 
+
+/* RESET */
 p {
     margin: 0;
 }
@@ -17,16 +28,10 @@ button {
     cursor: pointer;
     background: none;
     border: none;
-    padding: 8px 24px;
-    border-radius: .5rem;
-    font-weight: 600;
 }
 
 hr {
-    border: none;
     height: 1px;
-    background-color: $light-grey;
+    background-color: $lightGrey;
+    border: none;
 }
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

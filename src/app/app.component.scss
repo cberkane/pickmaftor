@@ -1,37 +1,16 @@
 @import 'utils';
 @import 'breakpoints';
 
-$height: 300px;
-
-.container {
+.app-container {
     @include container;
+    margin-top: 80px;
 }
 
 app-nav {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    display: block;
     width: 100%;
-    display: block;
-}
-
-app-recipe-picker {
-    display: block;
-    min-height: $height;
-    margin: 0 auto;
-}
-
-@include smartphone {
-    app-recipe-picker {
-        width: 100%;
-    }
-}
-
-@include tablet {
-    app-recipe-picker {
-        width: 50%;
-    }
-}
-
-@include desktop {
-    app-recipe-picker {
-        width: 30%;
-    }
+    background: #fff;
 }

@@ -1,0 +1,12 @@
+.home-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    padding: 8px 16px;
+    button {
+        flex: 1 0 48%;
+        margin-bottom: 6px;
+        aspect-ratio: 1;
+        background-color: #f8f8f8;
+    }
+}
