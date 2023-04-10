@@ -1,11 +1,11 @@
 <div *ngIf="recipe" class="card">
     <header>
         <h2>{{ recipe.name }}</h2>
-        <span class="chip">{{ recipe.category }}</span>
+        <span [style.background]="recipe.color" class="chip">{{ recipe.category }}</span>
     </header>
     <hr>
-    <ng-container *ngFor="let ingredient of recipe.ingredients">
-        <p>{{ ingredient.designation | titlecase }}</p>
+    <ng-container *ngFor="let ingredient of recipe.ingredients; let i = index;">
+        <p> {{i + 1}}. {{ ingredient.designation | titlecase }}</p>
     </ng-container>
 </div>
 <div *ngIf="!recipe" class="empty">

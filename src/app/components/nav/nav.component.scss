@@ -1,11 +1,25 @@
 @import 'variables';
+@import 'utils';
 
 nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
-    padding: 18px 0;
-    border-bottom: 1px solid $light-grey;
+    padding: 4px 18px;
+    border-bottom: 1px solid $lightGrey;
+    color: $darkBlue;
+}
+
+nav .brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+nav .brand h1 {
+    font-family: $font-brand;
+    height: 40px;
 }
 
 nav .aside {

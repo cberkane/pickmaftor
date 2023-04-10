@@ -1,19 +1,30 @@
 @import 'variables';
 
 @mixin container {
-    margin: 0 auto;
     width: 80%;
+    margin: 0 auto;
 }
 
 @mixin border {
-    border: 1px solid $light-grey;
+    border: 1px solid $lightGrey;
     border-radius: .5rem;
 }
 
+@mixin shadow {
+    text-shadow: 
+		-0.0075em 0.0075em 0 mix(#fff, $themeColor1, 94%),
+		0.005em 0.005em 0 mix(#fff, $themeColor1, 60%),
+		0.01em 0.01em 0 mix(#fff, $themeColor1, 62%), 
+		0.015em 0.015em mix(#fff, $themeColor1, 64%), 
+		0.02em 0.02em 0 mix(#fff, $themeColor1, 66%), 
+		0.025em 0.025em 0 mix(#fff, $themeColor1, 68%),
+		0.03em 0.03em 0 mix(#fff, $themeColor1, 70%),
+		0.035em 0.035em 0 mix(#fff, $themeColor1, 72%);
+}
+
 @mixin button-primary {
-    background-color: $primary;
-    color: $f;
+    background-color: $themeColor3;
     &:hover {
-        background-color: darken($primary, 5%);
+        background-color: darken($themeColor3, 5%);
     }
 }

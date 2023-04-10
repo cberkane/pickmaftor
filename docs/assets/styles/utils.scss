@@ -1,19 +1,18 @@
 @import 'variables';
 
 @mixin container {
-    margin: 0 auto;
     width: 80%;
+    margin: 0 auto;
 }
 
 @mixin border {
-    border: 1px solid $light-grey;
+    border: 1px solid $lightGrey;
     border-radius: .5rem;
 }
 
 @mixin button-primary {
-    background-color: $primary;
-    color: $f;
+    background-color: $themeColor3;
     &:hover {
-        background-color: darken($primary, 5%);
+        background-color: darken($themeColor3, 5%);
     }
 }

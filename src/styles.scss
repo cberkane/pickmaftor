@@ -16,6 +16,7 @@ html, body {
 
 body { 
     margin: 0;
+    background: $grey;
 }
 
 
@@ -34,7 +35,8 @@ button {
 }
 
 hr {
-    background-color: $light-grey;
+    height: 1px;
+    background-color: $lightGrey;
     border: none;
 }
 
