@@ -2,13 +2,16 @@
 @import 'variables';
 
 .recipe-picker {
+    @include shadow;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    padding: 1rem 0;
+    background: #f1f1f1;
+    border-radius: 5px;
 }
 
 .recipe-picker button {
-    display: block;
-    margin: 0 auto;
     @include button-primary;
+    display: block;
+    margin: 1rem auto;
 }

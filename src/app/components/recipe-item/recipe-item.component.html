@@ -8,7 +8,10 @@
         <p> {{i + 1}}. {{ ingredient.designation | titlecase }}</p>
     </ng-container>
 </div>
+
 <div *ngIf="!recipe" class="empty">
-    <img src="https://placehold.co/160x240" alt="Empty placeholder">
-    <p>Please select a recipe</p>
-</div>          
+    <span>Bro !</span>
+    <span>What are we eating today ?</span>
+    <hr style="width: 80%; margin-top: 4px;"/>
+    <img src="/assets/icons/burger-2.svg" alt="Empty placeholder">
+</div>              
