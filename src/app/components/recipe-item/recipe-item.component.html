@@ -1,7 +1,7 @@
 <div *ngIf="recipe" class="card">
     <header>
         <h2>{{ recipe.name }}</h2>
-        <span [style.background]="recipe.color" class="chip">{{ recipe.category }}</span>
+        <icon [icon]="recipe.icon"></icon>
     </header>
     <hr>
     <ng-container *ngFor="let ingredient of recipe.ingredients; let i = index;">
@@ -10,8 +10,6 @@
 </div>
 
 <div *ngIf="!recipe" class="empty">
-    <span>Bro !</span>
-    <span>What are we eating today ?</span>
-    <hr style="width: 80%; margin-top: 4px;"/>
-    <img src="/assets/icons/burger-2.svg" alt="Empty placeholder">
+    <h2>What are we eating today ?</h2>
+    <img src="/assets/icons/burger.svg" alt="Empty placeholder">
 </div>              

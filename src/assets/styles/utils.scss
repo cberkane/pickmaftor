@@ -19,8 +19,8 @@
 }
 
 @mixin button-primary {
-    background-color: $themeColor3;
+    background-color: $matColor3;
     &:hover {
-        background-color: darken($themeColor3, 5%);
-    }
+        background-color: darken($matColor3, 5%);
+    }   
 }

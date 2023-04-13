@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Recipe } from 'src/app/models/recipe.model';
+import { Icon } from '../icon/icon.enum';
 
 export enum Categories {
   PRINCIPAL = 'principal',
@@ -17,14 +18,14 @@ export class RecipeItemComponent implements OnInit {
   @Input() recipe: Recipe;
 
   ngOnInit(): void {
-    this.recipe.color = this.getColors(this.recipe.category);
+    this.recipe.icon = this.getIcon(this.recipe.category);
   }
 
-  getColors(categorie: string): string {
+  getIcon(categorie: string): string {
     switch (categorie) {
-      case Categories.PRINCIPAL: return 'green';
-      case Categories.SALAD: return 'pink';
-      case Categories.COUPEFAIM: return 'red';
+      case Categories.PRINCIPAL: return Icon.MEAL;
+      case Categories.SALAD: return Icon.SALAD;
+      case Categories.COUPEFAIM: return Icon.SANDWICH;
       default: return '';
     }
   }

@@ -1,6 +1,9 @@
 export enum Icon {
-    MENU = 'menu',
-    CROSS = 'cross',
+    BAGUETTE = 'baguette',
     BURGER = 'burger',
-    BURGER2 = 'burger-2'
+    CROSS = 'cross',
+    MEAL = 'meal',
+    MENU = 'menu',
+    SALAD = 'salad',
+    SANDWICH = 'sandwich',
 }
