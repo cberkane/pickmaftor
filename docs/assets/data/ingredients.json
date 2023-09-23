@@ -1,0 +1,28 @@
+{
+    "base": [
+        { "name": "riz" },
+        { "name": "riz noir" },
+        { "name": "semoule" },
+        { "name": "burghul" },
+        { "name": "pommes de terre" },
+        { "name": "patate douce" }
+    ],
+    "side": [
+        { "name": "chlada" }
+    ],
+    "veggie_base": [
+        { "name": "haricots verts" },
+        { "name": "haricots verts & shrooms" },
+        { "name": "pad thaï" },
+        { "name": "choux-fleurs" },
+        { "name": "carottes mcharmla" }
+    ],
+    "protein": [
+        { "name": "blanc de poulet" },
+        { "name": "boeuf" },
+        { "name": "oeufs" },
+        { "name": "saumon" },
+        { "name": "thon" },
+        { "name": "falafel" }
+    ]
+}

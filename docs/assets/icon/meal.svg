@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg fill="#000000" height="800px" width="800px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-	 viewBox="0 0 56.76 56.76" xml:space="preserve">
+<svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  xml:space="preserve">
+<symbol id="meal" viewBox="0 0 56.76 56.76">	
 <g>
 	<path d="M32.064,7.715c-0.227-0.559-0.585-1.073-1.094-1.495c-0.227-0.188-0.391-0.407-0.499-0.64L54.48,1.979L54.183,0
 		L30.765,3.513L29.693,2.22c-0.549,0.454-0.922,1.015-1.141,1.625l-1.924,0.288c0.095-0.132,0.203-0.26,0.341-0.374L25.693,2.22
@@ -68,4 +66,5 @@
 		c0.032-0.015,0.066-0.029,0.097-0.044c0.28-0.134,0.54-0.274,0.786-0.418c0.025-0.015,0.056-0.028,0.08-0.043
 		C45.913,46.341,36.621,54.76,25.399,54.76z"/>
 </g>
+</symbol>
 </svg>

@@ -1,14 +1,26 @@
-$font-family: 'Nunito Sans', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
 $font-brand: 'Patua One', cursive;
+$font-family: 'IBM Plex Sans', sans-serif;
 
 
 /* COLORS */
-$themeColor1: #e66100;
-$themeColor2: #ffa348;
-$themeColor3: #ffc081;
+$matColor1: #042629;
+$matColor2: #70b9bc;
+$matColor3: #6adbcd;
 
-$dark: #3f3844;
-$darkBlue:  #212f3c;
-$grey: #eeeeee; 
+$white: #fefefe;
+$black: #0A0A0A;
+
+$green: green;
+$orange: #f7a723;
+$red: #d4644a;
+
 $lightGrey: #e5e7eb;
-$white: #fff;
+$grey: #eeeeee; 
+
+
+/* FILTERS */
+$filterGreen: invert(18%) sepia(10%) saturate(4927%) hue-rotate(123deg) brightness(96%) contrast(86%);
+$filterOrange: invert(46%) sepia(8%) saturate(2355%) hue-rotate(359deg) brightness(95%) contrast(86%);
+$filterRed: invert(73%) sepia(32%) saturate(1418%) hue-rotate(342deg) brightness(100%) contrast(94%);

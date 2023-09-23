@@ -1,5 +1,7 @@
 @import 'variables';
 
+
+/* MIXIMS */
 @mixin container {
     width: 80%;
     margin: 0 auto;
@@ -8,6 +10,10 @@
 @mixin border {
     border: 1px solid $lightGrey;
     border-radius: .5rem;
+}
+
+@mixin bottomShadow {
+    box-shadow: rgba(57, 76, 96, 0.15) 0px 2px 4px -1px;
 }
 
 @mixin shadow {
@@ -19,8 +25,8 @@
 }
 
 @mixin button-primary {
-    background-color: $themeColor3;
+    background-color: $matColor3;
     &:hover {
-        background-color: darken($themeColor3, 5%);
-    }
+        background-color: darken($matColor3, 5%);
+    }   
 }

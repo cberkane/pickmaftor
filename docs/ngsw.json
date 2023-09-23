@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1681422534614,
+  "timestamp": 1695505604896,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -13,11 +13,11 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main.910f31e37445597a.js",
+        "/main.394145f0af7c20be.js",
         "/manifest.webmanifest",
         "/polyfills.b6306bf5bcfca8f4.js",
         "/runtime.e7366769316cdc0d.js",
-        "/styles.9314a7fcdf204a46.css"
+        "/styles.290d95b44acdc971.css"
       ],
       "patterns": []
     },
@@ -29,10 +29,12 @@
         "ignoreVary": true
       },
       "urls": [
-        "/assets/data/recipe.json",
-        "/assets/icons/baguette.svg",
-        "/assets/icons/burger.svg",
-        "/assets/icons/cross.svg",
+        "/assets/data/ingredients.json",
+        "/assets/icon/arrow-right.svg",
+        "/assets/icon/baguette.svg",
+        "/assets/icon/meal.svg",
+        "/assets/icon/salad.svg",
+        "/assets/icon/sandwich.svg",
         "/assets/icons/icon-128x128.png",
         "/assets/icons/icon-144x144.png",
         "/assets/icons/icon-152x152.png",
@@ -41,9 +43,7 @@
         "/assets/icons/icon-512x512.png",
         "/assets/icons/icon-72x72.png",
         "/assets/icons/icon-96x96.png",
-        "/assets/icons/meal.svg",
-        "/assets/icons/salad.svg",
-        "/assets/icons/sandwich.svg",
+        "/assets/img/salade.jpg",
         "/assets/styles/breakpoints.scss",
         "/assets/styles/utils.scss",
         "/assets/styles/variables.scss"
@@ -53,10 +53,12 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/assets/data/recipe.json": "4461a45c2283072ca8dbb43da38cf00b62fd2754",
-    "/assets/icons/baguette.svg": "8b8d2cbc39726837d7f4bb6a20260cff84229908",
-    "/assets/icons/burger.svg": "c2349739c9db62928153fee4926ba12cc643dbd2",
-    "/assets/icons/cross.svg": "25135b997bd72d1db63e6ba4ce90407e7202a91e",
+    "/assets/data/ingredients.json": "42e50958d46bc9ca3525cbb1019c42f3c412d38b",
+    "/assets/icon/arrow-right.svg": "2ac16a92f1009c0add8f8676365eb1e702861baa",
+    "/assets/icon/baguette.svg": "2b7db79847f56d8609f0ede9a248db3c5728026a",
+    "/assets/icon/meal.svg": "e5e9abc6731d7c6d22e61d7b6b7db033e06e8a88",
+    "/assets/icon/salad.svg": "6111fc5d806269a7a89527bd3327cff54651699c",
+    "/assets/icon/sandwich.svg": "0ecc4eb9ac537df2faf2eb53c040a7195f568604",
     "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
     "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
     "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
@@ -65,19 +67,17 @@
     "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
     "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
-    "/assets/icons/meal.svg": "3e2dc7e4c840ab8be9c7babab6047b708f149912",
-    "/assets/icons/salad.svg": "1320ac804afdb55c09ca20c33c5603805f4ddeb6",
-    "/assets/icons/sandwich.svg": "3d476feb8bae44251cb1b6c15f0b0640bdc73259",
+    "/assets/img/salade.jpg": "d9fc46ad6076d1190ea252b3079575689769d5ad",
     "/assets/styles/breakpoints.scss": "bd89ceed68b7aee596397370e2034907f2c0904d",
-    "/assets/styles/utils.scss": "4356b26601d23454b20218c5788ce2a052f2a1a4",
-    "/assets/styles/variables.scss": "f6dafb631025b7a3d5d031f8b9219858a8214655",
+    "/assets/styles/utils.scss": "1355043f1b248098edc8cf6698b2907c64fcbb5d",
+    "/assets/styles/variables.scss": "928635afd85b197a63925d2ce2554b899f358996",
     "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/index.html": "b9c217d4d80f395a25aa6a65eff5bb8dfd98ef12",
-    "/main.910f31e37445597a.js": "fafdfe4994a691fa2bb4bffd5c91dd4c81f879a3",
+    "/index.html": "b9fd665e373b067ff075fd95041ad6556cf360ce",
+    "/main.394145f0af7c20be.js": "41d046fb0edcfa455368edad10cbc0dc396fb678",
     "/manifest.webmanifest": "0bea742d438f74463bf8bfa16390e53b7fe67ef9",
     "/polyfills.b6306bf5bcfca8f4.js": "b7b0f06080c8ed49275cec711e0676714a75b644",
     "/runtime.e7366769316cdc0d.js": "6b5bcf88b89cd13a0352272ab906627924010a10",
-    "/styles.9314a7fcdf204a46.css": "83847b50ec8768549a7436431f2010c0b530e4fb"
+    "/styles.290d95b44acdc971.css": "5d5af6a6db4740b3453b57112a369876362a58d6"
   },
   "navigationUrls": [
     {
