@@ -1,9 +1,9 @@
 import { animate, style, transition, trigger } from '@angular/animations';
 import { Overlay, OverlayRef } from '@angular/cdk/overlay';
 import { TemplatePortal } from '@angular/cdk/portal';
-import { Component, TemplateRef, ViewChild, ViewContainerRef } from '@angular/core';
+import { Component, OnInit, TemplateRef, ViewChild, ViewContainerRef } from '@angular/core';
 import { Icons } from '../icon/icons.enum';
-import { environment } from 'src/environments/environment';
+import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-nav',
@@ -21,15 +21,30 @@ import { environment } from 'src/environments/environment';
     ])
   ]
 })
-export class NavComponent {
+export class NavComponent implements OnInit {
   @ViewChild('sidenav') sidenav: TemplateRef<any>;
   public overlayRef: OverlayRef;
   public icons = Icons;
+  public displayMenu: boolean;
 
   constructor(
     private overlay: Overlay,
-    private vcr: ViewContainerRef
+    private vcr: ViewContainerRef,
+    private router: Router,
   ) { }
+
+  ngOnInit(): void {
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) this.onDisplayMenu(event);
+    });
+  }
+
+  private onDisplayMenu(event: NavigationEnd): void {
+    const path = event.url.split('?')[0];
+    const whiteListpaths = ['/home'];
+    if (whiteListpaths.includes(path)) this.displayMenu = true;
+    else this.displayMenu = false;
+  }
 
   openMenu(): void {
     this.overlayRef = this.overlay.create({
@@ -38,10 +53,15 @@ export class NavComponent {
       hasBackdrop: true,
       scrollStrategy: this.overlay.scrollStrategies.close(),
       positionStrategy: this.overlay.position().global(),
-    })
+    });
 
     const sidenav = new TemplatePortal(this.sidenav, this.vcr);
     this.overlayRef.attach(sidenav);
-    this.overlayRef.backdropClick().subscribe(clc => console.log('clc', clc));
+    this.overlayRef.backdropClick().subscribe(() => this.overlayRef.detach());
   }
+
+  goBack(): void {
+    this.router.navigate(['/home']);
+  }
+
 }

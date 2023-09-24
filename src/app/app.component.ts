@@ -19,10 +19,17 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
-        const subtitle = this.route.firstChild.routeConfig.data['title'];
-        const title = subtitle ? `${this.title} - ${subtitle}` : this.title;
-        this.titleService.setTitle(title);
+        this.setPageTitle();
       }
     });
   }
+
+  private setPageTitle(): void {
+    const subtitle = this.route.firstChild.routeConfig.data['title'];
+    const title = subtitle ? `${this.title} - ${subtitle}` : this.title;
+    this.titleService.setTitle(title);
+  }
+
+
+
 }

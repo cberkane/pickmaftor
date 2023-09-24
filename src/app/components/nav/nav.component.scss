@@ -6,9 +6,9 @@ nav {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    @include bottomShadow;
     padding: 16px;
     icon {
         cursor: pointer;
     }
+    border-bottom: 1px solid #e9ecef;
 }

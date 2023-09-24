@@ -1,15 +1,6 @@
-@import 'utils';
-@import 'breakpoints';
-
-.app-container {
-    @include container;
-    margin-top: 80px;
-}
-
-app-nav {
+.navigation {
     position: fixed;
     top: 0;
-    z-index: 1000;
     display: block;
     width: 100%;
     background: #fff;

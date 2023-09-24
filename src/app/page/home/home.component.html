@@ -1,6 +1,8 @@
-<div class="home-buttons">
-    <button [routerLink]="['/ingredients']" [queryParams]="{type: IngredientType.BASE}">{{'base' | titlecase}}</button>
-    <button [routerLink]="['/ingredients']" [queryParams]="{type: IngredientType.VEGGIE_BASE}">{{'base végé' | titlecase}}</button>
-    <button [routerLink]="['/ingredients']" [queryParams]="{type: IngredientType.SIDE}">{{'accompagnement' | titlecase}}</button>
-    <button [routerLink]="['/ingredients']" [queryParams]="{type: IngredientType.PROTEIN}">{{'proteine' | titlecase}}</button>
-</div>
+<section id="home-page" class="container">
+    <div class="home-buttons">
+        <button [routerLink]="['/ingredients']" [queryParams]="{type: IngredientType.BASE}">{{'base' | titlecase}}</button>
+        <button [routerLink]="['/ingredients']" [queryParams]="{type: IngredientType.VEGGIE_BASE}">{{'base végé' | titlecase}}</button>
+        <button [routerLink]="['/ingredients']" [queryParams]="{type: IngredientType.SIDE}">{{'sides' | titlecase}}</button>
+        <button [routerLink]="['/ingredients']" [queryParams]="{type: IngredientType.PROTEIN}">{{'proteine' | titlecase}}</button>
+    </div>
+</section>
