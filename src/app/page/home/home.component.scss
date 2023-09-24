@@ -1,3 +1,5 @@
+@import 'variables';
+
 #home-page {
     margin-top: 80px;
     .home-buttons {
@@ -9,8 +11,9 @@
             flex: 1 0 48%;
             margin-bottom: 6px;
             aspect-ratio: 1;
-            background-color: #f8f8f8;
-            font-size: 16px;
+            background-color: $white;
+            font-size: 18px;
+            border: 1px solid $lightGrey;
         }
     }
 }

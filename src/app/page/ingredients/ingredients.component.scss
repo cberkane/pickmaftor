@@ -1,15 +1,24 @@
+@import 'variables';
+
 #page-ingredients {
-    h2 { 
-        text-align: center;
-        font-size: 18px;
+    margin-top: 80px;
+    header {
+        margin-bottom: 1em;
+        h2 { 
+            text-align: center;
+            font-size: 22px;
+        }
     }
     div {
-        padding: 16px;
+        padding: 16px 22px;
+        background: $white;
+        border: 1px solid $lightGrey;
         p {
-            font-size: 16px;
+            font-size: 18px;
             line-height: 24px;
             text-transform: capitalize;
             vertical-align: text-top;
+            margin-bottom: 12px;
         }
     }
 }

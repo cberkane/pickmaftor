@@ -24,9 +24,18 @@ export class IngredientsComponent implements OnInit {
   ngOnInit(): void {
     this.route.queryParams.pipe(
       map(params => params['type']),
-      tap(type => this.title = type),
+      tap(type => this.setTitle(type)),
       switchMap(type => this.ingredientsService.get(type))
-    ).subscribe(ingredients => this.ingredients = ingredients.sort((a, b) => a.name.localeCompare(b.name) ))
+    ).subscribe(ingredients => this.ingredients = ingredients.sort((a, b) => a.name.localeCompare(b.name)))
+  }
+
+  private setTitle(titleKey: string): void {
+    switch (titleKey) {
+      case 'veggie_base': this.title = 'Bases Végé'; break;
+      case 'base': this.title = 'Bases'; break;
+      case 'protein': this.title = 'Protéines'; break;
+      case 'side': this.title = 'Sides'; break;
+    }
   }
 
 }
