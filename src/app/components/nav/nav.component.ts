@@ -2,7 +2,7 @@ import { animate, style, transition, trigger } from '@angular/animations';
 import { Overlay, OverlayRef } from '@angular/cdk/overlay';
 import { TemplatePortal } from '@angular/cdk/portal';
 import { Component, TemplateRef, ViewChild, ViewContainerRef } from '@angular/core';
-import { Icon } from '../icon/icon.enum';
+import { Icons } from '../icon/icons.enum';
 import { environment } from 'src/environments/environment';
 
 @Component({
@@ -13,10 +13,10 @@ import { environment } from 'src/environments/environment';
     trigger('fade', [
       transition('void => *', [
         style({ width: '0%' }),
-        animate(200, style({ width: '100%' }))
+        animate(100, style({ width: '100%' }))
       ]),
       transition('* => void', [
-        animate(200, style({ width: '0%' }))
+        animate(100, style({ width: '0%' }))
       ]),
     ])
   ]
@@ -24,26 +24,24 @@ import { environment } from 'src/environments/environment';
 export class NavComponent {
   @ViewChild('sidenav') sidenav: TemplateRef<any>;
   public overlayRef: OverlayRef;
-  public icons = Icon;
+  public icons = Icons;
 
   constructor(
     private overlay: Overlay,
     private vcr: ViewContainerRef
-  ) {
-    console.log(environment.production)
-  }
-
+  ) { }
 
   openMenu(): void {
     this.overlayRef = this.overlay.create({
-      width: '100%',
+      width: '80%',
       height: '100vh',
       hasBackdrop: true,
       scrollStrategy: this.overlay.scrollStrategies.close(),
       positionStrategy: this.overlay.position().global(),
-    });
+    })
 
     const sidenav = new TemplatePortal(this.sidenav, this.vcr);
     this.overlayRef.attach(sidenav);
+    this.overlayRef.backdropClick().subscribe(clc => console.log('clc', clc));
   }
 }

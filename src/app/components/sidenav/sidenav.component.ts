@@ -1,5 +1,6 @@
 import { OverlayRef } from '@angular/cdk/overlay';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Icons } from '../icon/icons.enum';
 
 @Component({
   selector: 'app-sidenav',
@@ -8,7 +9,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class SidenavComponent {
   @Input() overlayRef: OverlayRef;
-  public crossIcon = ''; // TODO: replace me  
+  icons = Icons;
 
   constructor() { }
 

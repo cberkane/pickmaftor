@@ -2,25 +2,13 @@
 @import 'utils';
 
 nav {
-    @include bottomShadow;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 12px 24px;
-}
-
-nav .brand {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-nav .brand h1 {
-    font-weight: 900;
-}
-
-nav .aside {
-    padding: 0 16px;
-    icon { cursor: pointer }
+    @include bottomShadow;
+    padding: 16px;
+    icon {
+        cursor: pointer;
+    }
 }

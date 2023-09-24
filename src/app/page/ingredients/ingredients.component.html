@@ -1,4 +1,12 @@
-<h2>{{ title }}</h2>
-<div>
-    <p *ngFor="let item of ingredients">{{ item.name }}</p>
-</div>
+
+<section id="page-ingredients">
+    <header>
+        <button [routerLink]="['/home']">
+            <icon [icon]="icons.LONG_ARROW_LEFT"></icon>
+        </button>
+        <h2>{{ title }}</h2>
+    </header>
+    <div>
+        <p *ngFor="let item of ingredients">{{ item.name }}</p>
+    </div>
+</section>

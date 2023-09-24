@@ -7,10 +7,10 @@
 }
 
 .menu {
-    position: absolute      ;
-    width: 80%;
+    position: absolute;
+    width: 100%;
     height: 100vh;
-    background: #fff;
+    background: #fff; // TODO: externalise in color palette
     border-right: 1px solid $lightGrey;
 }
 

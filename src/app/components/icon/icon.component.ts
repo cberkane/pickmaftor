@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
-import { environment } from 'src/environments/environment';
+import { Icons } from './icons.enum';
 
 @Component({
   selector: 'icon',
@@ -12,7 +12,8 @@ export class IconComponent implements OnInit, AfterViewInit {
   @Input() size: string = '18px';
   @ViewChild('icon') iconRef: ElementRef<HTMLElement>;
   
-  public iconPath: string;
+  icons = Icons;
+  iconPath: string;
 
   ngOnInit(): void {
     if (!this.icon) return;
