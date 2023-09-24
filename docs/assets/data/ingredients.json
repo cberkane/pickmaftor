@@ -4,18 +4,27 @@
         { "name": "riz noir" },
         { "name": "semoule" },
         { "name": "burghul" },
+        { "name": "quinoa" },
         { "name": "pommes de terre" },
-        { "name": "patate douce" }
+        { "name": "patate douce" },
+        { "name": "nouilles" }
     ],
     "side": [
-        { "name": "chlada" }
+        { "name": "la shlada" },
+        { "name": "mix poivrons" },
+        { "name": "lentils & tomatoes" },
+        { "name": "lentils & carots" },
+        { "name": "hmissa" },
+        { "name": "choux rouges rapés" },
+        { "name": "celeri remoulade" }
     ],
     "veggie_base": [
         { "name": "haricots verts" },
-        { "name": "haricots verts & shrooms" },
         { "name": "pad thaï" },
-        { "name": "choux-fleurs" },
-        { "name": "carottes mcharmla" }
+        { "name": "choux-fleurs curry" },
+        { "name": "carottes mcharmla" },
+        { "name": "Ratatouille" },
+        { "name": "Purée provençale" }
     ],
     "protein": [
         { "name": "blanc de poulet" },

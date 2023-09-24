@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
 
-$font-brand: 'Patua One', cursive;
-$font-family: 'IBM Plex Sans', sans-serif;
-
+/* FONTS */
+$font-title: 'Besley', serif;
+$font-body: 'Red Hat Text', sans-serif;
 
 /* COLORS */
 $matColor1: #042629;
@@ -16,11 +16,5 @@ $green: green;
 $orange: #f7a723;
 $red: #d4644a;
 
-$lightGrey: #e5e7eb;
+$lightGrey: #e9ecef;
 $grey: #eeeeee; 
-
-
-/* FILTERS */
-$filterGreen: invert(18%) sepia(10%) saturate(4927%) hue-rotate(123deg) brightness(96%) contrast(86%);
-$filterOrange: invert(46%) sepia(8%) saturate(2355%) hue-rotate(359deg) brightness(95%) contrast(86%);
-$filterRed: invert(73%) sepia(32%) saturate(1418%) hue-rotate(342deg) brightness(100%) contrast(94%);
