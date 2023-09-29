@@ -2,7 +2,14 @@
     <header>
         <h2>{{ title }}</h2>
     </header>
-    <div>
-        <p *ngFor="let item of ingredients">{{ item.name }}</p>
+    <div class="main-content">
+        <table>
+            <tr *ngFor="let ingredient of ingredients; let i = index">
+                <td>{{ingredient.name}}</td>
+                <td class="icon">
+                    <span class="material-icons" (click)="setIngredient(ingredient)">info</span>
+                </td>
+            </tr>
+        </table>
     </div>
 </section>

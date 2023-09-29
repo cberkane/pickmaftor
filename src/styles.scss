@@ -1,7 +1,11 @@
-/* IMPORTS */
-@import '@angular/cdk/overlay-prebuilt.css';
+/* LOCAL IMPORTS */
 @import 'utils';
 @import 'variables';
+
+
+/* EXTERNAL IMPORTS */
+@import '@angular/cdk/overlay-prebuilt.css';
+@import '@material-design-icons/font';
 
 
 /* GENERAL */
@@ -41,4 +45,9 @@ hr {
 /* TEXT */
 h1, h2, h3, h4 {
     font-family: $font-title;
+}
+
+
+.material-icons { 
+    cursor: pointer;
 }

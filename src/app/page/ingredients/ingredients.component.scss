@@ -2,6 +2,9 @@
 
 #page-ingredients {
     margin-top: 80px;
+    background: $white;
+    padding: 16px 22px;
+    border-radius: 7px;
     header {
         margin-bottom: 1em;
         h2 { 
@@ -9,16 +12,20 @@
             font-size: 22px;
         }
     }
-    div {
-        padding: 16px 22px;
-        background: $white;
-        border: 1px solid $lightGrey;
-        p {
+    .main-content {
+        table {
+            width: 100%;
             font-size: 18px;
             line-height: 24px;
             text-transform: capitalize;
             vertical-align: text-top;
-            margin-bottom: 12px;
+            td {
+                &.icon {
+                    opacity: .4;
+                    cursor: pointer;
+                    text-align: end;
+                }
+            }
         }
     }
 }

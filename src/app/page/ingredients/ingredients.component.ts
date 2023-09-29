@@ -14,6 +14,7 @@ export class IngredientsComponent implements OnInit {
 
   title: String;
   ingredients: Ingredient[];
+  ingredient: Ingredient;
   icons = Icons;
 
   constructor(
@@ -36,6 +37,10 @@ export class IngredientsComponent implements OnInit {
       case 'protein': this.title = 'Protéines'; break;
       case 'side': this.title = 'Sides'; break;
     }
+  }
+
+  setIngredient(ingredient: Ingredient): void {
+    this.ingredient = ingredient;
   }
 
 }

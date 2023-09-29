@@ -1,6 +1,6 @@
 <nav>
-    <icon *ngIf="displayMenu" [icon]="icons.MENU" (click)="openMenu()"></icon>
-    <icon *ngIf="!displayMenu" [icon]="icons.ARROW_LEFT" (click)="goBack()"></icon>
+    <span *ngIf="displayMenu" class="material-icons" (click)="openMenu()">menu</span>
+    <span *ngIf="!displayMenu" class="material-icons" (click)="goBack()">arrow_back</span>
 </nav>
 
 <ng-template #sidenav>
