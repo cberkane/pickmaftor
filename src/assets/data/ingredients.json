@@ -1,37 +1,130 @@
 {
     "base": [
-        { "name": "riz" },
-        { "name": "riz noir" },
-        { "name": "semoule" },
-        { "name": "burghul" },
-        { "name": "quinoa" },
-        { "name": "pommes de terre" },
-        { "name": "patate douce" },
-        { "name": "nouilles" }
+        {
+            "name": "riz",
+            "nutritionFacts": {
+                "calories": 349,
+                "carbohydrates": 77
+            },
+            "brands": ["Palais des lumières"]
+        },
+        {
+            "name": "riz noir",
+            "nutritionFacts": {
+                "calories": null,
+                "carbohydrates": null
+            }
+        },
+        {
+            "name": "semoule",
+            "nutritionFacts": {
+                "calories": 170,
+                "carbohydrates": 32
+            },
+            "brands": ["Tipiak"]
+        },
+        {
+            "name": "burghul",
+            "nutritionFacts": {
+                "calories": 350,
+                "carbohydrates": 66
+            },
+            "brands": ["Lustucru"]
+        },
+        {
+            "name": "quinoa",
+            "nutritionFacts": {
+                "calories": 364,
+                "carbohydrates": 60
+            },
+            "brands": ["Tipiak"]
+        },
+        {
+            "name": "pommes de terre",
+            "nutritionFacts": {
+                "calories": 81,
+                "carbohydrates": 17
+            }
+        },
+        {
+            "name": "patate douce",
+            "nutritionFacts": {
+                "calories": 86,
+                "carbohydrates": 18
+            }
+        },
+        {
+            "name": "nouilles",
+            "nutritionFacts": {
+                "calories": 371,
+                "carbohydrates": 71
+            }
+        }
     ],
     "side": [
-        { "name": "la shlada" },
-        { "name": "mix poivrons" },
-        { "name": "lentils & tomatoes" },
-        { "name": "lentils & carots" },
-        { "name": "hmissa" },
-        { "name": "choux rouges rapés" },
-        { "name": "celeri remoulade" }
+        {
+            "name": "la shlada"
+        },
+        {
+            "name": "lentilles & tomatoes"
+        },
+        {
+            "name": "lentilles & carottes"
+        },
+        {
+            "name": "hmissa"
+        },
+        {
+            "name": "salade de choux rouges"
+        },
+        {
+            "name": "celeri remoulade"
+        }
     ],
     "veggie_base": [
-        { "name": "haricots verts" },
-        { "name": "pad thaï" },
-        { "name": "choux-fleurs curry" },
-        { "name": "carottes mcharmla" },
-        { "name": "Ratatouille" },
-        { "name": "Purée provençale" }
+        {
+            "name": "haricots verts"
+        },
+        {
+            "name": "haricots verts & shrooms"
+        },
+        {
+            "name": "pad thaï"
+        },
+        {
+            "name": "choux-fleurs"
+        },
+        {
+            "name": "carottes mcharmla"
+        },
+        {
+            "name": "Ratatouille"
+        },
+        {
+            "name": "Purée provençale"
+        },
+        {
+            "name": "trio de poivrons"
+        }
     ],
     "protein": [
-        { "name": "blanc de poulet" },
-        { "name": "boeuf" },
-        { "name": "oeufs" },
-        { "name": "saumon" },
-        { "name": "thon" },
-        { "name": "falafel" }
+        {
+            "name": "blanc de poulet"
+        },
+        {
+            "name": "steak haché"
+        },
+        {
+            "name": "oeufs"
+        },
+        {
+            "name": "thon"
+        },
+        {
+            "name": "cabillaud"
+        },
+        {
+            "name": "falafel"
+        }
     ]
 }

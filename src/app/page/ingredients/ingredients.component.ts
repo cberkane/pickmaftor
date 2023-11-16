@@ -18,8 +18,8 @@ export class IngredientsComponent implements OnInit {
   icons = Icons;
 
   constructor(
+    private ingredientsService: IngredientsService,
     private route: ActivatedRoute,
-    private ingredientsService: IngredientsService
   ) { }
 
   ngOnInit(): void {
@@ -27,7 +27,7 @@ export class IngredientsComponent implements OnInit {
       map(params => params['type']),
       tap(type => this.setTitle(type)),
       switchMap(type => this.ingredientsService.get(type))
-    ).subscribe(ingredients => this.ingredients = ingredients.sort((a, b) => a.name.localeCompare(b.name)))
+    ).subscribe(ingredients => this.ingredients = ingredients.sort((a, b) => a.name.localeCompare(b.name)));
   }
 
   private setTitle(titleKey: string): void {

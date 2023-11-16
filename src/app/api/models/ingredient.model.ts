@@ -1,3 +1,10 @@
+export interface Ingredient {
+    type: IngredientType;
+    name: string;
+    brand?: string;
+    nutritionFacts?: NutritionFacts
+}
+
 export enum IngredientType {
     BASE = "base",
     SIDE = "side",
@@ -5,8 +12,7 @@ export enum IngredientType {
     PROTEIN = "protein",
 }
 
-export interface Ingredient {
-    type: IngredientType;
-    name: string;
-    brand?: string;
+export interface NutritionFacts {
+    calories: number;
+    carbohydrates: number;
 }
