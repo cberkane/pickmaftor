@@ -1,32 +1,33 @@
 @import 'variables';
 
 #page-ingredients {
+    padding: 16px 22px;
     margin-top: 80px;
     background: $white;
-    padding: 16px 22px;
+    border: 1px solid $grey;
     border-radius: 7px;
     header {
+        padding: 1em 0;
+        margin-top: 4px;
         margin-bottom: 1em;
+        border-radius: 6px;
+        color: $white;
         h2 { 
             text-align: center;
             font-size: 22px;
         }
+        &.base { background-color: $base-color;}
+        &.side { background-color: $side-color;}
+        &.veggie { background-color: $veggie-color;}
+        &.protein { background-color: $protein-color;}
     }
     .main-content {
         table {
             width: 100%;
             font-size: 18px;
-            line-height: 24px;
+            line-height: 26px;
             text-transform: capitalize;
             vertical-align: text-top;
-            td, th {
-                text-align: start;
-                &.carbohydrates {
-                    text-align: end;
-                    .up { color: #f7930e }
-                    .down { color: #069753 }
-                }
-            }
         }
     }
 }

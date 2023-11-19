@@ -2,7 +2,6 @@ import { animate, style, transition, trigger } from '@angular/animations';
 import { Overlay, OverlayRef } from '@angular/cdk/overlay';
 import { TemplatePortal } from '@angular/cdk/portal';
 import { Component, OnInit, TemplateRef, ViewChild, ViewContainerRef } from '@angular/core';
-import { Icons } from '../icon/icons.enum';
 import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
@@ -24,7 +23,6 @@ import { NavigationEnd, Router } from '@angular/router';
 export class NavComponent implements OnInit {
   @ViewChild('sidenav') sidenav: TemplateRef<any>;
   public overlayRef: OverlayRef;
-  public icons = Icons;
   public displayMenu: boolean;
 
   constructor(

@@ -2,8 +2,7 @@ import { IngredientsService } from './../../api/ingredients.service';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { map, switchMap, tap } from 'rxjs';
-import { Ingredient } from 'src/app/api/models/ingredient.model';
-import { Icons } from 'src/app/components/icon/icons.enum';
+import { Ingredient, IngredientType } from 'src/app/api/models/ingredient.model';
 
 @Component({
   selector: 'page-ingredients',
@@ -12,10 +11,9 @@ import { Icons } from 'src/app/components/icon/icons.enum';
 })
 export class IngredientsComponent implements OnInit {
 
-  title: String;
   ingredients: Ingredient[];
-  ingredient: Ingredient;
-  icons = Icons;
+  title: string;
+  ingredient: string;
 
   constructor(
     private ingredientsService: IngredientsService,
@@ -24,23 +22,30 @@ export class IngredientsComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.queryParams.pipe(
-      map(params => params['type']),
+      map(params => params['type'] as IngredientType),
       tap(type => this.setTitle(type)),
       switchMap(type => this.ingredientsService.get(type))
     ).subscribe(ingredients => this.ingredients = ingredients.sort((a, b) => a.name.localeCompare(b.name)));
   }
 
-  private setTitle(titleKey: string): void {
+  private setTitle(titleKey: IngredientType): void {
     switch (titleKey) {
-      case 'veggie_base': this.title = 'Bases Végé'; break;
-      case 'base': this.title = 'Bases'; break;
-      case 'protein': this.title = 'Protéines'; break;
-      case 'side': this.title = 'Sides'; break;
+      case IngredientType.VEGGIE_BASE:
+        this.title = 'Bases Végé';
+        this.ingredient = 'veggie';
+        break;
+      case IngredientType.BASE:
+        this.title = 'Bases';
+        this.ingredient = 'base';
+        break;
+      case IngredientType.PROTEIN:
+        this.title = 'Protéines';
+        this.ingredient = 'protein';
+        break;
+      case IngredientType.SIDE:
+        this.title = 'Sides';
+        this.ingredient = 'side';
+        break;
     }
   }
-
-  setIngredient(ingredient: Ingredient): void {
-    this.ingredient = ingredient;
-  }
-
 }

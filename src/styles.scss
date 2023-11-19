@@ -1,12 +1,8 @@
-/* LOCAL IMPORTS */
+/* IMPORTS */
 @import 'utils';
 @import 'variables';
-
-
-/* EXTERNAL IMPORTS */
 @import '@angular/cdk/overlay-prebuilt.css';
 @import '@material-design-icons/font';
-
 
 /* GENERAL */
 * {
@@ -20,12 +16,10 @@ html, body {
 }
 
 body { 
-    margin: 0;
-    background-color: $aliceblue;
+    background-color: $bg-color;
 }
 
-
-/* RESET */
+/* ELEMENTS */
 p {
     margin: 0;
 }
@@ -36,18 +30,11 @@ button {
     border: none;
 }
 
-hr {
-    height: 1px;
-    background-color: $lightGrey;
-    border: none;
-}
-
-/* TEXT */
 h1, h2, h3, h4 {
     font-family: $font-title;
 }
 
-
+/* LIBRARIES */
 .material-icons { 
     cursor: pointer;
 }

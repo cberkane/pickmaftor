@@ -10,7 +10,6 @@ import { environment } from '../environments/environment';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavComponent } from './components/nav/nav.component';
-import { IconComponent } from './components/icon/icon.component';
 import { HomeComponent } from './page/home/home.component';
 import { IngredientsComponent } from './page/ingredients/ingredients.component';
 
@@ -20,7 +19,6 @@ import { IngredientsComponent } from './page/ingredients/ingredients.component';
     AppComponent,
     NavComponent,
     SidenavComponent,
-    IconComponent,
     HomeComponent,
     IngredientsComponent,
   ],

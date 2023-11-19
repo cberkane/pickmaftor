@@ -18,10 +18,10 @@
             border-radius: 7px;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
             @include shadow;   
-            &.bases { background-color: #8b75e6 }
-            &.veggie-bases  { background-color: #75beb2 }
-            &.sides { background-color: #d85191 }
-            &.proteins { background-color: #f65b67 }
+            &.bases { background-color: $base-color }
+            &.veggie-bases  { background-color: $veggie-color }
+            &.sides { background-color: $side-color }
+            &.proteins { background-color: $protein-color }
         }
     }
 }
