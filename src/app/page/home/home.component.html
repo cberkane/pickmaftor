@@ -1,8 +1,8 @@
 <section id="home-page" class="container">
     <div class="home-buttons">
         <button class="bases" [routerLink]="['/ingredients']" [queryParams]="{type: IngredientType.BASE}">{{'bases' | titlecase}}</button>
-        <button class="veggie-bases" [routerLink]="['/ingredients']" [queryParams]="{type: IngredientType.VEGGIE_BASE}">{{'bases végé' | titlecase}}</button>
         <button class="sides" [routerLink]="['/ingredients']" [queryParams]="{type: IngredientType.SIDE}">{{'sides' | titlecase}}</button>
+        <button class="veggie-bases" [routerLink]="['/ingredients']" [queryParams]="{type: IngredientType.VEGGIE_BASE}">{{'bases végé' | titlecase}}</button>
         <button class="proteins " [routerLink]="['/ingredients']" [queryParams]="{type: IngredientType.PROTEIN}">{{'protéines' | titlecase}}</button>
     </div>
 
