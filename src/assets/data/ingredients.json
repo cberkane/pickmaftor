@@ -1,91 +1,57 @@
 {
     "base": [
         {
-            "name": "riz",
-            "nutritionFacts": {
-                "calories": 349,
-                "carbohydrates": 77
-            },
-            "brands": ["Palais des lumières"]
+            "name": "riz"
         },
         {
-            "name": "riz noir",
-            "nutritionFacts": {
-                "calories": null,
-                "carbohydrates": null
-            }
+            "name": "riz noir"
         },
         {
-            "name": "semoule",
-            "nutritionFacts": {
-                "calories": 170,
-                "carbohydrates": 32
-            },
-            "brands": ["Tipiak"]
+            "name": "semoule"
         },
         {
-            "name": "burghul",
-            "nutritionFacts": {
-                "calories": 350,
-                "carbohydrates": 66
-            },
-            "brands": ["Lustucru"]
+            "name": "burghul"
         },
         {
-            "name": "quinoa",
-            "nutritionFacts": {
-                "calories": 364,
-                "carbohydrates": 60
-            },
-            "brands": ["Tipiak"]
+            "name": "quinoa"
         },
         {
-            "name": "pommes de terre",
-            "nutritionFacts": {
-                "calories": 81,
-                "carbohydrates": 17
-            }
+            "name": "pommes de terre"
         },
         {
-            "name": "patate douce",
-            "nutritionFacts": {
-                "calories": 86,
-                "carbohydrates": 18
-            }
+            "name": "patate douce"
         },
         {
-            "name": "nouilles",
-            "nutritionFacts": {
-                "calories": 371,
-                "carbohydrates": 71
-            }
+            "name": "nouilles"
         },
         {
-            "name": "gnocchis",
-            "nutritionFacts": {
-                "calories": null,
-                "carbohydrates": null
-            }
+            "name": "gnocchis"
         }
     ],
     "side": [
         {
-            "name": "shlada"
+            "name": "champignons sautés"
         },
         {
-            "name": "lentilles & tomatoes"
+            "name": "cottage cheese"
         },
         {
-            "name": "lentilles & carottes"
+            "name": "tofu sauté"
+        },
+        {
+            "name": "cari de pois chiches"
+        },
+        {
+            "name": "chilli beans"
+        },
+        {
+            "name": "salade de concombre & tomates"
         },
         {
             "name": "hmissa"
         },
         {
-            "name": "choux rouges"
-        },
-        {
-            "name": "celeri remoulade"
+            "name": "lentilles"
         }
     ],
     "veggie_base": [
@@ -112,6 +78,9 @@
         },
         {
             "name": "trio de poivrons"
+        },
+        {
+            "name": "asperges rôties"
         }
     ],
     "protein": [
