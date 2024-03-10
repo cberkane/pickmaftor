@@ -23,4 +23,22 @@
         cursor: pointer;
         @include ripple.radius-bounded;
     }
-}   
+    h2 {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.menu div {
+    ul li { 
+        padding: 8px 22px;
+        border-bottom: 1px solid $grey;
+        &:first-of-type {
+            border-top: 1px solid $grey;
+        }
+        a {
+            text-decoration: none;
+            color: $black;
+        }
+    }
+}

@@ -8,21 +8,21 @@ import { Ingredient, IngredientType } from './models/ingredient.model';
 })
 export class IngredientsService {
   private path = './assets/data/ingredients.json';
-  private ingredientsSubject = new BehaviorSubject(null);
+  private subject = new BehaviorSubject(null);
 
   constructor(
     private http: HttpClient
   ) { }
 
   get(ingredientType: IngredientType): Observable<Ingredient[]> {
-    if (this.ingredientsSubject.value) {
-      return this.ingredientsSubject.asObservable()
+    if (this.subject.value) {
+      return this.subject.asObservable()
         .pipe(map(ingredients => ingredients[ingredientType]))
     };
 
     return this.http.get(this.path)
       .pipe(
-        tap(ingredients => this.ingredientsSubject.next(ingredients)),
+        tap(ingredients => this.subject.next(ingredients)),
         map(ingredients => ingredients[ingredientType])
       );
   }

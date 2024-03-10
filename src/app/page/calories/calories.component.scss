@@ -1,0 +1,17 @@
+#page-calories {
+    padding: 8px 16px;
+    table {
+        width: 100%;
+        th {
+            text-align: start;
+            &:last-of-type { 
+                text-align: right;
+            }
+        }
+        td {
+            &:last-of-type { 
+                text-align: right;
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+<div id="page-calories">
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Qtité</th>
+                <th>Cal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let c of calories">
+                <td>{{ c.name }}</td>
+                <td>{{ c.quantity }}</td>
+                <td>{{ c.calories }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

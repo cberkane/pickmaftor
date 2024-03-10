@@ -1,10 +1,16 @@
 <div class="menu">
     <header>
-        <h2>Menu title</h2>
+        <h2>Menu</h2>
         <span class="material-icons" (click)="close()">close</span>
     </header>
     <div>
-        <p>I am sidenav bro</p>
+        <ul>
+            <li>
+                <a routerLink="count" (click)="close()">Compte</a>
+            </li>
+            <li>
+                <a routerLink="calories" (click)="close()">Calories</a>
+            </li>
+        </ul>
     </div>
 </div>
-<!-- TODO: Rename to side-menu -->

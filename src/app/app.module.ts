@@ -12,6 +12,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './page/home/home.component';
 import { IngredientsComponent } from './page/ingredients/ingredients.component';
+import { CountComponent } from './page/count/count.component';
+import { CaloriesComponent } from './page/calories/calories.component';
 
 
 @NgModule({
@@ -21,6 +23,8 @@ import { IngredientsComponent } from './page/ingredients/ingredients.component';
     SidenavComponent,
     HomeComponent,
     IngredientsComponent,
+    CountComponent,
+    CaloriesComponent,
   ],
 
   imports: [

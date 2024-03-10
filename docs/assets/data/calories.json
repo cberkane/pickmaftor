@@ -1,0 +1,20 @@
+[
+    {"name": "huile d'olive", "quantity": "1 bouchon", "calories": 55},
+    {"name": "pain seigle", "quantity": "1 tranche", "calories": 130},
+    {"name": "houmous", "quantity": "10g", "calories": 30},
+    {"name": "olives vertes", "quantity": "1 cc", "calories": 10},
+    {"name": "tomates", "quantity": "100g", "calories": 26},
+    {"name": "fenouilles", "quantity": "100g", "calories": 31},
+    {"name": "concombres", "quantity": "100g", "calories": 15},
+    {"name": "carottes", "quantity": "100g", "calories": 41},
+    {"name": "haricots verts", "quantity": "100g", "calories": 31},
+    {"name": "champignons", "quantity": "100g", "calories": 30},
+    {"name": "poivrons verts", "quantity": "100g", "calories": 26},
+    {"name": "patate douce", "quantity": "100g", "calories": 90},
+    {"name": "pommes de terre", "quantity": "100g", "calories": 80},
+    {"name": "couscous", "quantity": "100g", "calories": 163},
+    {"name": "riz", "quantity": "100g", "calories": 350},
+    {"name": "oeufs", "quantity": "60g", "calories": 93},
+    {"name": "steak 5%", "quantity": "100g", "calories": 135},
+    {"name": "blanc de poulet", "quantity": "100g", "calories": 120}
+]
